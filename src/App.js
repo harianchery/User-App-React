@@ -4,6 +4,7 @@ import AddUser from './components/AddUser';
 import Search from './components/Search';
 import Delete from './components/Delete';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import View from './components/View';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path='/' element={<AddUser/>}/>
       <Route path='/search' element={<Search/>}/>
       <Route path='/delete' element={<Delete/>}/>
+      <Route path='/view' element={<View/>}/>
     </Routes>
     </BrowserRouter>
   );
